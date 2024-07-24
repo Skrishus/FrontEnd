@@ -1,0 +1,563 @@
+.navbar {
+    padding: 10px 10px; /* Отступы сверху и снизу для навигационной панели */
+    margin: 10px 10px;
+    background-color: lightgray;
+    list-style-type: none;
+    
+}
+
+.navbar li {
+    list-style-type:none;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: #333;
+  
+}
+
+.navbar a:hover {
+    color:rgb(121, 6, 6);
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.btn-game {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-game:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-image: url('LOTR.jpg'); /* Path to your background image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.hero {
+    background-color: rgba(0, 0, 0,0.2);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+    
+}
+
+
+.hero h1{
+    color:rgb(144, 135, 135)
+}
+.hero p {
+    color:rgb(165, 161, 155)
+}
+
+.black-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding:10px;
+    margin:100px;
+    border-radius:10px;
+    width: 800px;
+}
+
+.playwrite-cu-custom {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300; /* Задайте нужное значение от 100 до 400 */
+    font-style: normal;
+  }
+  
+
+.primer {
+    background-color: #271a1a;
+    height:450px;
+    
+}
+
+
+.merediv {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color:bisque;
+    background-color: #0e0e0e;
+    border-radius: 40px;
+    margin:250px 0px 0px 100px;
+    border:0px 0px 0px 0px;
+    width:6000px;
+    height:150vh
+    
+
+    
+    
+}
+.papa {
+    display:flex;
+    flex-direction: row;
+    margin:0px;
+    
+}
+
+.reklama {
+ background-color: #000000;
+ margin-left:103px;
+ width:350px;
+ height:700px;
+ border-radius: 30px;
+ margin-bottom:200px;
+    
+    
+}
+
+
+.reklama .card-header {
+    color:white;
+    background-color:rgba(202, 202, 53, 0.5);
+    width:200px;
+}
+.reklama .card-body {
+    padding-top:150px;
+    color:white;
+}
+
+
+
+.button {
+margin-top:200px;
+
+
+}
+
+
+
+.image {
+    height:65vh;
+    margin-bottom:330px;
+}
+
+
+.papareklama .smallimg {
+    height:5vh;
+}
+
+.reklamazagol {
+    position: absolute;
+    top:1350px;
+    right:80px;
+}
+
+.papareklama {
+    background-color: #0e0e0e;
+    margin: 250px 30px 250px 30px;
+    height:1000px;
+    border-radius: 30px;
+    padding:20px;
+}
+
+
+  .description {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding:20px;
+    
+  }
+
+
+  .mere {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding:20px;
+    color:rgb(173, 169, 169);
+  }
+
+  .merediv img {
+    height:60vh;
+    margin: 0px 0px 50px 50px;
+    padding: 30px;
+
+}
+.quotes {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color:bisque;
+    
+    border-radius: 40px;
+    margin:100px;
+    background-color:rgb(48, 37, 16);
+    height:400px
+}
+.quotes blockquote {
+    
+    background-color: #271a1a;
+    width:370px;
+    border-radius:30px;
+    padding:20px;
+    margin:30px;
+}
+.books {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin:100px;
+    border-radius:20px;
+ 
+}
+
+.timeline {
+    background-color: rgba(124, 112, 112,0.5);
+    border-radius:30px;
+    width:700px;
+}
+
+
+
+
+.card-custom {
+    background-color: rgba(0, 0, 0,0.4) ;
+    border-radius: 60px;
+    width:750px;
+    
+  }
+  .card-custom .card-header {
+    background-color: rgba(238, 216, 127, 0.5) ;
+    width:20%;
+    height:7vh;
+    color:black;
+    
+  }
+  .card-custom .card-text {
+    color: rgb(173, 169, 169) ;
+    padding-right:240px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+    
+  }
+  
+.card-title-left {
+    margin-left:0px;
+    text-align: left;
+}
+
+.card-subtitle-left {
+    margin-left:20px;
+    text-align: left;
+}
+
+
+.books ul {
+    padding:0px 0px 40px 40px;
+}
+.books li {
+    margin:10px;
+    color:antiquewhite;
+}
+.books .zagol {
+    display: flex;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    flex: 1;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding:50px;
+    color:rgb(255, 255, 255)
+    
+}
+
+.dopinf {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+.dopinf img {
+    width:600px;
+    border-radius: 20px;
+    height:400px;
+    transition: transform 0.3s ease;
+    margin:30px;
+}
+.dopinf img:hover {
+    transform: scale(1.02); /* Увеличение изображения на 10% при наведении */
+}
+
+.dopinf .text1 {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    position: absolute; /* Абсолютное позиционирование для текста */
+    bottom: 30px; /* Располагаем текст 10px от нижнего края контейнера */
+    left:-76px; /* Располагаем текст 10px от левого края контейнера */
+    color: white; /* Цвет текста */
+    background: linear-gradient(180deg, rgba(142, 92, 26,0.1) 0%, rgba(142, 92, 26,0.5) 100%); /* Градиентный фон для текста */ /* Полупрозрачный черный фон для текста */
+    padding: 5px; /* Внутренние отступы для текста */
+    border-radius: 10px; /* Скругленные углы для фона текста */
+    width:605px;
+   
+}
+
+.dopinf .text2 {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    position: absolute; /* Абсолютное позиционирование для текста */
+    bottom: 30px; /* Располагаем текст 10px от нижнего края контейнера */
+    left: 585px; /* Располагаем текст 10px от левого края контейнера */
+    color: white; /* Цвет текста */
+    background: linear-gradient(180deg, rgba(142, 92, 26,0) 0%, rgba(142, 92, 26,0.2) 100%); /* Градиентный фон для текста */ /* Полупрозрачный черный фон для текста */
+    padding: 5px; /* Внутренние отступы для текста */
+    border-radius: 10px; /* Скругленные углы для фона текста */
+    width:595px;
+}
+
+
+.papa .absoluteimg {
+    position:absolute; 
+    left:1050px;
+    height:25vh;
+    top:1170px;
+}
+
+
+
+.absolute {
+    position:relative;
+}
+
+
+.absolute .image1 {
+    position: absolute;
+    top: 334px; /* Положение сверху */
+    left: 461px; /* Положение слева */
+    width: 100px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота изображения для сохранения пропорций */
+    height:45vh;
+    width:auto;
+}
+
+
+.absolute .image2 {
+    position: absolute;
+    top: 214px; /* Положение сверху */
+    left: 931px; /* Положение слева */
+    width: 100px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота изображения для сохранения пропорций */
+    height:15vh;
+    width:auto;
+}
+
+.absolute .image3 {
+    position: absolute;
+    top: 694px; /* Положение сверху */
+    left: 831px; /* Положение слева */
+    width: 100px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота изображения для сохранения пропорций */
+    height:4vh;
+    width:auto;
+}
+.absolute .image4 {
+    position: absolute;
+    top: 694px; /* Положение сверху */
+    left: 981px; /* Положение слева */
+    width: 100px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота изображения для сохранения пропорций */
+    height:4vh;
+    width:auto;
+}
+
+
+.smaller img{
+    width:250px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+.smaller img:hover{
+    transform: scale(1.02);
+}
+
+
+.black-background {
+    background: linear-gradient(180deg, rgba(2, 2, 2, 0.3) 0%, rgb(0, 0, 0) 100%);
+    height:100%;
+    padding:30px;
+   
+}
+
+.card-background {
+    background-color: rgb(29, 24, 24);
+}
+
+
+
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px;
+    background-color: #292828;
+    padding-top: 20px;
+    z-index: 1000; /* Поверх всего остального контента */
+  }
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  .sidebar a:hover {
+    background-color: #575d63;
+  }
+ 
+
+
+
+
+.quote {
+    background-color: rgb(29, 25, 30);
+    margin:0px;
+}
+
+.quote .card-header {
+    background-color: #9e7d1a;
+    width:100px;
+}
+
+
+
+
+.list-group-item:hover {
+    background-color: #f0f0f0;
+}
+
+.artist {
+        background-image: url('sheer.jpg');
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s ease-in-out;
+      }
+      .artist:hover {
+        transform: scale(1.05);
+      }
+      .card-body a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        color: inherit; /* Чтобы текст внутри ссылки наследовал цвет родителя */
+        text-decoration: none; /* Убираем подчеркивание у ссылок */
+      }
+
+
+      .register {
+        background-color: #ddaa12;
+        margin-bottom:30px;
+        padding-top: 30px; /* Уменьшение отступов внутри кнопки */
+        font-size: 1rem; /* Уменьшение размера шрифта */
+        line-height: 0.01rem; /* Уменьшение высоты строки */
+       
+      }
+
+      .login {
+        background-color: #3e3e3e;
+        margin-bottom:30px;
+        padding-top: 30px; /* Уменьшение отступов внутри кнопки */
+        font-size: 1rem; /* Уменьшение размера шрифта */
+        line-height: 0.0005rem; /* Уменьшение высоты строки */
+       
+      }
+
+
+      .contact {
+        font-size:30px;
+      }
+
+
+      .rivendell {
+
+        margin-right:0px;
+      }
+
+      .rings {
+        margin-left:500px;
+      }
+
+
+
+     
+      .footer {
+        background-color: rgba(0, 0, 0,0.5);
+        padding: 20px 0;
+    }
+    footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+      .text-muted {
+        color: rgba(255, 255, 255, 0.975); /* Полупрозрачный черный цвет */
+    }
+
+
+
+  /* Стили для изменения цвета List Group и карточек */
+  .list-group-item {
+    background-color: #201f28; /* Серо-фиолетовый */
+    color: white;
+}
+.list-group-item.active {
+    background-color: #47454f; /* Более темный серо-фиолетовый для активного элемента */
+    color: white;
+}
+.list {
+    background-color: #201f28; /* Серо-фиолетовый */
+    color: white;
+}
+.list .card-header {
+    background-color: #2a2835; /* Серый */
+    color: white;
+}
+
+
+.carousel-item img {
+    height: 300px; /* Установите нужную высоту */
+    width: 100%; /* Устанавливает ширину изображения */
+    object-fit: contain; /* Сохраняет пропорции и полностью отображает изображение */
+    transition: transform 0.3s ease; /* Анимация изменения размера */
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении на 5% */
+}

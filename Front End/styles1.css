@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.group-list {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.group-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.group-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.group-list li:hover {
+    background-color: #ddd;
+}
+
+.game-list {
+    padding: 20px;
+    width: 300px;
+}

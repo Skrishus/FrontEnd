@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Fan Site</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #282c34;
+            color: #d7dadc;
+        }
+        .card {
+            background-color: #333842;
+            border: none;
+        }
+        .card-title, .card-text, .card-footer {
+            color: #d7dadc;
+        }
+        .character-card img {
+            width: 100%;
+            height: auto;
+        }
+        .btn-register {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #animate {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            margin-top: 20px;
+        }
+        .character-card img {
+            height: 30vh;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        .character-card img:hover {
+            transform: scale(1.1);
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+        .show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Fan Site for Tolkien</h1>
+
+        <!-- JS Objects and Properties -->
+        <div>
+            <h2>Main Characters</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img id="elrond-img" src="elrond.jpg" alt="Elrond" data-character="elrond">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img id="aragorn-img" src="aragorn.jpg" alt="Aragorn" data-character="aragorn">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="character-card">
+                        <img id="gimli-img" src="gimli.jpg" alt="Gimli" data-character="gimli">
+                    </div>
+                </div>
+            </div>
+            <div id="character-info" class="mt-4 fade-in"></div>
+        </div>
+
+        <!-- Register Button -->
+        <button id="register-btn" class="btn btn-register mt-4">Register</button>
+
+        <!-- Animations -->
+        <div id="animate"></div>
+        <button id="start-animation" class="btn btn-success mt-2">Start Animation</button>
+
+        <!-- Play Sound -->
+         <h1>AUDIOQQQQQQQQ</h1>
+        <audio id="sound" src="sample-3s.mp3"></audio>
+    </div>
+
+    <!-- Full version of jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JS Objects
+        const characters = {
+            elrond: {
+                name: "Elrond",
+                race: "Elf",
+                description: "Elrond is a fictional character in J. R. R. Tolkien's Middle-earth legendarium. He is an Elf-lord and the master of Rivendell.",
+                img: "elrond.jpg"
+            },
+            aragorn: {
+                name: "Aragorn",
+                race: "Man",
+                description: "Aragorn is a character in J. R. R. Tolkien's legendarium. He is the heir of Isildur and the rightful king of Gondor.",
+                img: "aragorn.jpg"
+            },
+            gimli: {
+                name: "Gimli",
+                race: "Dwarf",
+                description: "Gimli is a fictional character from J. R. R. Tolkien's Middle-earth legendarium. He is a dwarf warrior and a member of the Fellowship of the Ring.",
+                img: "gimli.jpg"
+            }
+        };
+
+        // Event Listeners
+        document.querySelectorAll('.character-card img').forEach(img => {
+            img.addEventListener('click', function() {
+                const character = characters[this.getAttribute('data-character')];
+                const infoDiv = document.getElementById('character-info');
+                infoDiv.style.opacity = 0; // Hide the div
+                infoDiv.innerHTML = `
+                    <h2>${character.name}</h2>
+                    <p>${character.description}</p>
+                `;
+                setTimeout(() => {
+                    infoDiv.style.opacity = 1; // Fade in the div
+                }, 100); // Slight delay to allow content to change
+            });
+
+            // Play sound on hover
+            img.addEventListener('mouseover', function() {
+                const sound = document.getElementById('sound');
+                sound.play();
+            });
+        });
+
+
+        // Animation function
+        document.getElementById('start-animation').addEventListener('click', function() {
+            const elem = document.getElementById('animate');
+            let pos = 0;
+            const id = setInterval(frame, 5);
+            function frame() {
+                if (pos == 350) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + 'px';
+                    elem.style.left = pos + 'px';
+                }
+            }
+        });
+
+        // Change button color on hover using JavaScript
+        const registerBtn = document.getElementById('register-btn');
+        registerBtn.addEventListener('mouseover', function() {
+            registerBtn.style.backgroundColor = '#0056b3';
+        });
+        registerBtn.addEventListener('mouseout', function() {
+            registerBtn.style.backgroundColor = '#007bff';
+        });
+    </script>
+</body>
+</html>
